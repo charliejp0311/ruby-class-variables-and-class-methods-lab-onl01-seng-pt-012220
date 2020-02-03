@@ -13,12 +13,12 @@ class Song
     @@genres << genre
     @@artists << artist
     if @@genre_count.include?(genre)
-      @@genre_count[genre] += 1 
+      @@genre_count[genre] += 1
     else
       @@genre_count = {genre => 1}
     end
     if @@artist_count.include?(artist)
-      @@artist_count[artist] += 1 
+      @@artist_count[artist] += 1
     else
       @@artist_count = {artist => 1}
     end
@@ -33,6 +33,6 @@ class Song
     @@genres.uniq
   end
   def self.genre_count
-    
-  end 
+
+  end
 end
