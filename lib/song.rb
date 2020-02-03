@@ -20,7 +20,7 @@ class Song
     if @@artist_count.include?(artist)
       @@artist_count[artist] += 1
     else
-      @@artist_count = {artist => 1}
+      @@artist_count[artist] = 1
     end
   end
   def self.count
